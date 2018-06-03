@@ -9,7 +9,7 @@ var clockRunning = false;
 var countDownTimer = {
     time: 30,
     start: function () {
-        $("#time-left").append("Time Remainng:" + "00:30");
+        $("#time-left").append("Time Remaining:" + "00:30");
         if (!clockRunning) {
             intervalId = setInterval(countDownTimer.count, 1000);
             clockRunning = true;
